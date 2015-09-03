@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-8 column col-md-offset-2">
+      <form class="form-horizontal" role="form" name="loginform" id="loginform" action="logcliente.php" mthod="POST">
+        <h2>Login</h2>
+        <div class="form-group ">
+          <div class="col-sm-10">
+            <input class="form-control" type="text" name="user" id="user" placeholder="Usuario" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10">
+            <input class="form-control" type="password" name="password" id="password" placeholder="Contraseña" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class=" col-sm-10">
+            <div class="checkbox">
+               <label><input type="checkbox" />Recordarme</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-10">
+             <button type="submit"name="login" value="Entrar" class="btn btn-default">Entrar</button>
+             <a href="/"><button class="btn btn-primary">Cancelar</button></a>
+          </div>
+        </div>
+        <p class="regtext">No estas registrado? <a href="register.php" >Registrate Aquí</a>!</p>
+      </form>
+    </div>
+  </div>
+</div>
