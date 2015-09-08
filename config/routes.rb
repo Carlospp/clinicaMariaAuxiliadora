@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
 
+  resources :dentists
+  get 'intranet/record'
+
+  get 'intranet/history'
+
+  get 'intranet/diagnostic'
+
+  get 'intranet/procedure'
+
+  get 'intranet/evolution'
+
   root 'pages#index'
 
   get 'about' => 'pages#about', as: :about
