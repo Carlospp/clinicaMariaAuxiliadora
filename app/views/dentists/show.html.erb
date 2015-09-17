@@ -1,0 +1,57 @@
+<h2 class="col-md-offset-5">Datos de Odontologo</h2>
+<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-5">
+<p>
+  <strong>Nombre:</strong>
+  <%= @dentist.nombre %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @dentist.apellido %>
+</p>
+
+<p>
+  <strong>Fecnac:</strong>
+  <%= @dentist.fecnac %>
+</p>
+
+<p>
+  <strong>Fecalta:</strong>
+  <%= @dentist.fecalta %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @dentist.direccion %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @dentist.telefono %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @dentist.celular %>
+</p>
+
+<p>
+  <strong>Cop:</strong>
+  <%= @dentist.cop %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @dentist.email %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @dentist.user %>
+</p>
+
+<%= link_to 'Editar', edit_dentist_path(@dentist) %> |
+<%= link_to 'Atras', dentists_path %>

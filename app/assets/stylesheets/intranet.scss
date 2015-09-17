@@ -1,0 +1,13 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body{
+  margin-left:1%;
+  font-size: 16px;
+}
+select.date{
+    width:200px;
+    height: 30px;
+    border-radius:5px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
