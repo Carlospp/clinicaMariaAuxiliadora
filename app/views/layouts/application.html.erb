@@ -3,14 +3,12 @@
 <head>
   <title><%= yield(:title)%> | Clinica María Auxiliadora</title>
   <%= favicon_link_tag 'favicon.ico' %>
-  <link href="/assets/application.css" media="screen" rel="stylesheet" />
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
-</header>
 <%= yield %>
-
+<p>hola soy de la aplicaction</p>
 </body>
 </html>
