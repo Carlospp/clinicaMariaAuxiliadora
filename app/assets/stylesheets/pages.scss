@@ -19,6 +19,10 @@ footer,.navbar-default{
     background:$celeste !important;
     font-size: 1.5em;
 }
+.dropdown-menu li a{
+  color:$celeste !important;
+}
+
 footer a,.navbar-default a{
   color: #fff !important;
 }
@@ -33,5 +37,8 @@ footer a,.navbar-default a{
   font-size: 1em;
 }
 
-
+#mapa{
+  width: 100%;
+  
+}
 

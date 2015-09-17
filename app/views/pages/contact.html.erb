@@ -1,33 +1,39 @@
+<%= provide(:contact,"active") %>
+<%= provide(:title,"Contactenos") %>
 <div class="container">
   <div class="row clearfix">
-    <div class="col-md-8 column col-md-offset-2">
+    <div class="col-md-6 column col-md-offset-1">
       <form class="form-horizontal" role="form" name="loginform" id="loginform" action="logcliente.php" mthod="POST">
-        <h2>Login</h2>
+        <h2>Contáctenos</h2>
         <div class="form-group ">
           <div class="col-sm-10">
-            <input class="form-control" type="text" name="user" id="user" placeholder="Usuario" required/>
+            <input class="form-control" type="text" name="nombre" id="nombre" placeholder="ingresar Nombres" required/>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="col-sm-10">
+            <input class="form-control" type="email" name="email" id="email" placeholder="Ingresar correo" required/>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="col-sm-10">
+            <input class="form-control" type="text" name="telefono" id="telefono" placeholder="Ingresar numero telefónico" required/>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="col-sm-10">
+            <input class="form-control" type="text" name="comentario" id="comentario" placeholder="Ingresar comentario" required/>
           </div>
         </div>
         <div class="form-group">
           <div class="col-sm-10">
-            <input class="form-control" type="password" name="password" id="password" placeholder="Contraseña" required/>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class=" col-sm-10">
-            <div class="checkbox">
-               <label><input type="checkbox" />Recordarme</label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-10">
-             <button type="submit"name="login" value="Entrar" class="btn btn-default">Entrar</button>
+             <button type="submit"name="login" value="Entrar" class="btn btn-default">Enviar</button>
              <a href="/"><button class="btn btn-primary">Cancelar</button></a>
           </div>
         </div>
-        <p class="regtext">No estas registrado? <a href="register.php" >Registrate Aquí</a>!</p>
       </form>
     </div>
   </div>
 </div>
+<br><br>
+<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1593.9665367917305!2d-76.92488643061502!3d-12.029694567249676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-12.0295753!2d-76.9248791!5e0!3m2!1ses!2ses!4v1442507249250" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

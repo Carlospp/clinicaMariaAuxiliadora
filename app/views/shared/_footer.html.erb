@@ -4,12 +4,27 @@
     <div class="col-md-3">
        <h3>Clínica María Auxiliadora</h3>
              <ul>            
-              <li><a href="http://clinicamariaauxiliadora.herokuapp.com/services">Rehabilitación Oral</a></li>
-              <li><a href="http://clinicamariaauxiliadora.herokuapp.com/services">Implantes Dentales</a></li>
-              <li><a href="http://clinicamariaauxiliadora.herokuapp.com/services">Injertos y Costmética Dental</a></li>
-              <li><a href="http://clinicamariaauxiliadora.herokuapp.com/services">Estética Dental</a></li>
-              <li><a href="http://clinicamariaauxiliadora.herokuapp.com/services">Tratamientos</a></li>
-              <li><a href="http://clinicamariaauxiliadora.herokuapp.com/services">Beneficios</a></li>
+              <li class="<%= yield(:services)%>">
+              <%= link_to "Rehabilitación Dental", rehabilitation_path %>
+            </li>
+            <li class="<%= yield(:services)%>">
+              <%= link_to "Ortodoncia", orthodontics_path %>
+            </li>
+            <li class="<%= yield(:services)%>">
+              <%= link_to "Endodoncia", endodontics_path %>
+            </li>
+            <li class="<%= yield(:services)%>">
+              <%= link_to "Estetica", aesthetic_path %>
+            </li>
+            <li class="<%= yield(:services)%>">
+              <%= link_to "Cirugia", surgery_path %>
+            </li>
+            <li class="<%= yield(:services)%>">
+              <%= link_to "Periodoncia", periodontics_path %>
+            </li>
+            <li class="<%= yield(:services)%>">
+              <%= link_to "Implantes Dentales", implants_path %>
+            </li>
             </ul> 
     </div>
     <div class="col-md-5">

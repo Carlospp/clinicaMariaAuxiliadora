@@ -22,36 +22,32 @@
       <ul class="nav navbar-nav navbar-center">
         <li class="<%= yield(:index)%>"><%= link_to "Inicio", root_path %></li>
         <li class="<%= yield(:about)%>"><%= link_to "Nosotros", about_path %></li>
-        <li class="<%= yield(:services)%>"><%= link_to "Servicios", services_path %></li>
-        <li class="<%= yield(:contact)%>"><%= link_to "Contáctanos", contact_path %></li>
         <li class="dropdown pull-right">
-           <a href="#" data-toggle="dropdown" class="dropdown-toggle">Nuestros tratamientos<strong class="caret"></strong></a>
+           <a href="#" data-toggle="dropdown" class="dropdown-toggle">Servicios<strong class="caret"></strong></a>
           <ul class="dropdown-menu">
-            <li>
-              <a href="#">Blanqueamientos</a>
+            <li >
+              <%= link_to "Rehabilitación Dental", rehabilitation_path %>
             </li>
-            <li>
-              <a href="#">Endodoncia</a>
+            <li >
+              <%= link_to "Ortodoncia", orthodontics_path %>
             </li>
-            <li>
-              <a href="#">Implantología</a>
+            <li >
+              <%= link_to "Endodoncia", endodontics_path %>
             </li>
-            <li>
-              <a href="#">Odontopediatría</a>
+            <li >
+              <%= link_to "Estetica", aesthetic_path %>
             </li>
-            <li>
-              <a href="#">Ortodoncia</a>
+            <li >
+              <%= link_to "Cirugia", surgery_path %>
             </li>
-            <li>
-              <a href="#">Periodoncia</a>
+            <li >
+              <%= link_to "Periodoncia", periodontics_path %>
             </li>
-            <li>
-              <a href="#">Prótesis Dentales</a>
-            </li>
-            <li>
-              <a href="#">Salud e higiene Oral</a>
+            <li >
+              <%= link_to "Implantes Dentales", implants_path %>
             </li>
           </ul>
+            <li class="<%= yield(:contact)%>"><%= link_to "Contáctanos", contact_path %></li>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

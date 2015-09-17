@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'rehabilitation' => 'services#rehabilitation', as: :rehabilitation  
+
+  get 'orthodontics' => 'services#orthodontics', as: :orthodontics 
+
+  get 'endodontics' => 'services#endodontics', as: :endodontics
+
+  get 'surgery' => 'services#surgery', as: :surgery
+
+  get 'periodontics' => 'services#periodontics', as: :periodontics
+
+  get 'implants' => 'services#implants', as: :implants
+
+  get 'aesthetic' => 'services#aesthetic', as: :aesthetic
+
   resources :dentists
   get 'intranet/record'
 
@@ -16,6 +30,8 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about', as: :about
   get 'services' => 'pages#services', as: :services
   get 'contact' => 'pages#contact', as: :contact
+  get 'blanqueamiento' => 'pages#services/blanqueamiento', as: :blanqueamiento
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
